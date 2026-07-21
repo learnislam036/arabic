@@ -13,19 +13,19 @@
     --accent-gold: #F59E0B;
     --accent-teal: #14B8A6;
     --accent-rose: #FB7185;
-    --bg-gradient-start: #1E1040;
-    --bg-gradient-mid: #2D1B69;
-    --bg-gradient-end: #0F172A;
-    --card-bg: rgba(255, 255, 255, 0.06);
-    --card-bg-hover: rgba(255, 255, 255, 0.12);
-    --card-border: rgba(255, 255, 255, 0.1);
-    --text-primary: #F8FAFC;
-    --text-secondary: #CBD5E1;
-    --text-muted: #94A3B8;
-    --glass-bg: rgba(255, 255, 255, 0.08);
-    --glass-border: rgba(255, 255, 255, 0.15);
-    --shadow-glow: 0 0 30px rgba(139, 92, 246, 0.3);
-    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --bg-gradient-start: #FFFFFF;
+    --bg-gradient-mid: #F8FAFC;
+    --bg-gradient-end: #F1F5F9;
+    --card-bg: rgba(255, 255, 255, 1);
+    --card-bg-hover: rgba(248, 250, 252, 1);
+    --card-border: rgba(226, 232, 240, 1);
+    --text-primary: #1E293B;
+    --text-secondary: #475569;
+    --text-muted: #64748B;
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(226, 232, 240, 0.8);
+    --shadow-glow: 0 0 30px rgba(139, 92, 246, 0.15);
+    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.05);
     --radius-sm: 12px;
     --radius-md: 18px;
     --radius-lg: 24px;
@@ -365,24 +365,24 @@ body {
 .letter-card[data-color="rose"]:hover { box-shadow: 0 0 30px rgba(251, 113, 133, 0.4); }
 
 .letter-card[data-color="purple"] .letter-arabic {
-    color: #C4B5FD;
-    text-shadow: 0 0 14px rgba(196, 181, 253, 0.5);
+    color: #8B5CF6;
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
 }
 .letter-card[data-color="pink"] .letter-arabic {
-    color: #F9A8D4;
-    text-shadow: 0 0 14px rgba(249, 168, 212, 0.5);
+    color: #EC4899;
+    text-shadow: 0 0 10px rgba(236, 72, 153, 0.2);
 }
 .letter-card[data-color="teal"] .letter-arabic {
-    color: #5EEAD4;
-    text-shadow: 0 0 14px rgba(94, 234, 212, 0.5);
+    color: #14B8A6;
+    text-shadow: 0 0 10px rgba(20, 184, 166, 0.2);
 }
 .letter-card[data-color="gold"] .letter-arabic {
-    color: #FDE68A;
-    text-shadow: 0 0 14px rgba(253, 230, 138, 0.5);
+    color: #F59E0B;
+    text-shadow: 0 0 10px rgba(245, 158, 11, 0.2);
 }
 .letter-card[data-color="rose"] .letter-arabic {
-    color: #FDA4AF;
-    text-shadow: 0 0 14px rgba(253, 164, 175, 0.5);
+    color: #F43F5E;
+    text-shadow: 0 0 10px rgba(244, 63, 94, 0.2);
 }
 
 /* ---------- Practice Section ---------- */
@@ -433,8 +433,8 @@ body {
     font-family: var(--font-arabic);
     font-size: 5rem;
     font-weight: 700;
-    color: #FBBF24;
-    text-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+    color: var(--primary);
+    text-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
     line-height: 1.2;
 }
 
@@ -531,8 +531,8 @@ body {
     justify-content: space-between;
     gap: 1rem;
     padding: 0.7rem 1rem;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
     border-radius: var(--radius-sm);
     cursor: pointer;
     transition: all 0.3s;
@@ -553,8 +553,8 @@ body {
     font-family: var(--font-arabic);
     font-size: 1.6rem;
     font-weight: 700;
-    color: #FBBF24;
-    text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+    color: var(--primary);
+    text-shadow: none;
     min-width: 80px;
     text-align: right;
 }
@@ -867,10 +867,7 @@ body {
 .quiz-complete h2 {
     font-family: var(--font-display);
     font-size: 2rem;
-    background: linear-gradient(135deg, #FDE68A, #FBBF24);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--primary);
     margin-bottom: 1rem;
 }
 
@@ -932,12 +929,12 @@ body {
     position: relative;
     width: 90%;
     max-width: 420px;
-    background: linear-gradient(135deg, #1E1040, #2D1B69);
-    border: 2px solid rgba(167, 139, 250, 0.3);
+    background: #FFFFFF;
+    border: 2px solid var(--glass-border);
     border-radius: var(--radius-xl);
     padding: 2.5rem 2rem;
     text-align: center;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(139, 92, 246, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1), 0 0 40px rgba(139, 92, 246, 0.1);
     animation: popupIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -974,8 +971,8 @@ body {
     font-family: var(--font-arabic);
     font-size: 6rem;
     font-weight: 700;
-    color: #FBBF24;
-    text-shadow: 0 0 24px rgba(251, 191, 36, 0.5);
+    color: var(--primary);
+    text-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
     line-height: 1.2;
     margin-bottom: 0.5rem;
 }

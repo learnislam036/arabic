@@ -11,9 +11,10 @@ const ARABIC_LETTERS = [
         description: 'The first letter. A long vowel sound.',
         forms: { isolated: 'ا', initial: 'ا', medial: 'ـا', final: 'ـا' },
         examples: [
-            { word: 'اللّٰه', translit: 'Allah', meaning: 'God' },
-            { word: 'الحمد', translit: 'Al-Hamd', meaning: 'The Praise' },
-            { word: 'الرحمن', translit: 'Ar-Rahman', meaning: 'The Most Merciful' }
+            { form: 'Isolated', word: 'ا', translit: 'Alif', meaning: 'Letter' },
+            { form: 'Initial', word: 'أَسَد', translit: 'Asad', meaning: 'Lion' },
+            { form: 'Medial', word: 'بَاب', translit: 'Baab', meaning: 'Door' },
+            { form: 'Final', word: 'عَصَا', translit: 'Asa', meaning: 'Stick' }
         ]
     },
     {
@@ -22,9 +23,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "b" sound like in "boy".',
         forms: { isolated: 'ب', initial: 'بـ', medial: 'ـبـ', final: 'ـب' },
         examples: [
-            { word: 'بِسْمِ', translit: 'Bismi', meaning: 'In the name of' },
-            { word: 'بَرَكَة', translit: 'Baraka', meaning: 'Blessing' },
-            { word: 'بَيْت', translit: 'Bayt', meaning: 'House' }
+            { form: 'Isolated', word: 'ب', translit: 'Ba', meaning: 'Letter' },
+            { form: 'Initial', word: 'بَيْت', translit: 'Bayt', meaning: 'House' },
+            { form: 'Medial', word: 'حَبْل', translit: 'Habl', meaning: 'Rope' },
+            { form: 'Final', word: 'كَلْب', translit: 'Kalb', meaning: 'Dog' }
         ]
     },
     {
@@ -33,9 +35,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "t" sound like in "table".',
         forms: { isolated: 'ت', initial: 'تـ', medial: 'ـتـ', final: 'ـت' },
         examples: [
-            { word: 'تَبَارَكَ', translit: 'Tabarak', meaning: 'Blessed is' },
-            { word: 'تَوْبَة', translit: 'Tawba', meaning: 'Repentance' },
-            { word: 'تِين', translit: 'Teen', meaning: 'Fig (Surah)' }
+            { form: 'Isolated', word: 'ت', translit: 'Ta', meaning: 'Letter' },
+            { form: 'Initial', word: 'تُفَّاح', translit: 'Tuffaah', meaning: 'Apple' },
+            { form: 'Medial', word: 'كِتَاب', translit: 'Kitaab', meaning: 'Book' },
+            { form: 'Final', word: 'بَيْت', translit: 'Bayt', meaning: 'House' }
         ]
     },
     {
@@ -44,9 +47,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "th" sound like in "think".',
         forms: { isolated: 'ث', initial: 'ثـ', medial: 'ـثـ', final: 'ـث' },
         examples: [
-            { word: 'ثَمَرَات', translit: 'Thamarat', meaning: 'Fruits' },
-            { word: 'ثَوَاب', translit: 'Thawab', meaning: 'Reward' },
-            { word: 'ثَلَاثَة', translit: 'Thalatha', meaning: 'Three' }
+            { form: 'Isolated', word: 'ث', translit: 'Tha', meaning: 'Letter' },
+            { form: 'Initial', word: 'ثَعْلَب', translit: 'Tha\'lab', meaning: 'Fox' },
+            { form: 'Medial', word: 'مِثَال', translit: 'Mithaal', meaning: 'Example' },
+            { form: 'Final', word: 'مُثَلَّث', translit: 'Muthallath', meaning: 'Triangle' }
         ]
     },
     {
@@ -55,9 +59,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "j" sound like in "jump".',
         forms: { isolated: 'ج', initial: 'جـ', medial: 'ـجـ', final: 'ـج' },
         examples: [
-            { word: 'جَنَّة', translit: 'Jannah', meaning: 'Paradise' },
-            { word: 'جِبْرِيل', translit: 'Jibreel', meaning: 'Angel Gabriel' },
-            { word: 'جَمِيل', translit: 'Jameel', meaning: 'Beautiful' }
+            { form: 'Isolated', word: 'ج', translit: 'Jeem', meaning: 'Letter' },
+            { form: 'Initial', word: 'جَمَل', translit: 'Jamal', meaning: 'Camel' },
+            { form: 'Medial', word: 'شَجَرَة', translit: 'Shajara', meaning: 'Tree' },
+            { form: 'Final', word: 'ثَلْج', translit: 'Thalj', meaning: 'Snow' }
         ]
     },
     {
@@ -66,9 +71,10 @@ const ARABIC_LETTERS = [
         description: 'A deep "h" from the throat.',
         forms: { isolated: 'ح', initial: 'حـ', medial: 'ـحـ', final: 'ـح' },
         examples: [
-            { word: 'حَمْد', translit: 'Hamd', meaning: 'Praise' },
-            { word: 'حَقّ', translit: 'Haqq', meaning: 'Truth' },
-            { word: 'حِكْمَة', translit: 'Hikma', meaning: 'Wisdom' }
+            { form: 'Isolated', word: 'ح', translit: 'Haa', meaning: 'Letter' },
+            { form: 'Initial', word: 'حِصَان', translit: 'Hisaan', meaning: 'Horse' },
+            { form: 'Medial', word: 'بَحْر', translit: 'Bahr', meaning: 'Sea' },
+            { form: 'Final', word: 'مِلْح', translit: 'Milh', meaning: 'Salt' }
         ]
     },
     {
@@ -77,9 +83,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "kh" sound from the throat.',
         forms: { isolated: 'خ', initial: 'خـ', medial: 'ـخـ', final: 'ـخ' },
         examples: [
-            { word: 'خَيْر', translit: 'Khair', meaning: 'Good / Best' },
-            { word: 'خَلَقَ', translit: 'Khalaq', meaning: 'Created' },
-            { word: 'خُشُوع', translit: 'Khushoo', meaning: 'Humility' }
+            { form: 'Isolated', word: 'خ', translit: 'Kha', meaning: 'Letter' },
+            { form: 'Initial', word: 'خَرُوف', translit: 'Kharoof', meaning: 'Sheep' },
+            { form: 'Medial', word: 'نَخْلَة', translit: 'Nakhla', meaning: 'Palm tree' },
+            { form: 'Final', word: 'بَطِّيخ', translit: 'Batteekh', meaning: 'Watermelon' }
         ]
     },
     {
@@ -88,9 +95,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "d" sound like in "door".',
         forms: { isolated: 'د', initial: 'د', medial: 'ـد', final: 'ـد' },
         examples: [
-            { word: 'دِين', translit: 'Deen', meaning: 'Religion / Faith' },
-            { word: 'دُعَاء', translit: "Du'a", meaning: 'Prayer / Supplication' },
-            { word: 'دُنْيَا', translit: 'Dunya', meaning: 'World' }
+            { form: 'Isolated', word: 'د', translit: 'Dal', meaning: 'Letter' },
+            { form: 'Initial', word: 'دُب', translit: 'Dubb', meaning: 'Bear' },
+            { form: 'Medial', word: 'حَدِيقَة', translit: 'Hadeeqa', meaning: 'Garden' },
+            { form: 'Final', word: 'يَد', translit: 'Yad', meaning: 'Hand' }
         ]
     },
     {
@@ -99,9 +107,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "dh" sound like in "the".',
         forms: { isolated: 'ذ', initial: 'ذ', medial: 'ـذ', final: 'ـذ' },
         examples: [
-            { word: 'ذِكْر', translit: 'Dhikr', meaning: 'Remembrance' },
-            { word: 'ذٰلِكَ', translit: 'Dhalika', meaning: 'That' },
-            { word: 'ذُرِّيَّة', translit: 'Dhurriya', meaning: 'Offspring' }
+            { form: 'Isolated', word: 'ذ', translit: 'Dhal', meaning: 'Letter' },
+            { form: 'Initial', word: 'ذِئْب', translit: 'Dhi\'b', meaning: 'Wolf' },
+            { form: 'Medial', word: 'حِذَاء', translit: 'Hidhaa\'', meaning: 'Shoe' },
+            { form: 'Final', word: 'قُنْفُذ', translit: 'Qunfudh', meaning: 'Hedgehog' }
         ]
     },
     {
@@ -110,9 +119,10 @@ const ARABIC_LETTERS = [
         description: 'A rolled "r" sound.',
         forms: { isolated: 'ر', initial: 'ر', medial: 'ـر', final: 'ـر' },
         examples: [
-            { word: 'رَبّ', translit: 'Rabb', meaning: 'Lord' },
-            { word: 'رَحْمَة', translit: 'Rahma', meaning: 'Mercy' },
-            { word: 'رَسُول', translit: 'Rasool', meaning: 'Messenger' }
+            { form: 'Isolated', word: 'ر', translit: 'Ra', meaning: 'Letter' },
+            { form: 'Initial', word: 'رُمَّان', translit: 'Rummaan', meaning: 'Pomegranate' },
+            { form: 'Medial', word: 'كُرْسِي', translit: 'Kursi', meaning: 'Chair' },
+            { form: 'Final', word: 'قَمَر', translit: 'Qamar', meaning: 'Moon' }
         ]
     },
     {
@@ -121,9 +131,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "z" sound like in "zoo".',
         forms: { isolated: 'ز', initial: 'ز', medial: 'ـز', final: 'ـز' },
         examples: [
-            { word: 'زَكَاة', translit: 'Zakat', meaning: 'Charity' },
-            { word: 'زَيْتُون', translit: 'Zaytoon', meaning: 'Olive' },
-            { word: 'زَمْزَم', translit: 'Zamzam', meaning: 'Zamzam (water)' }
+            { form: 'Isolated', word: 'ز', translit: 'Zay', meaning: 'Letter' },
+            { form: 'Initial', word: 'زَرَافَة', translit: 'Zaraafa', meaning: 'Giraffe' },
+            { form: 'Medial', word: 'جَزَر', translit: 'Jazar', meaning: 'Carrot' },
+            { form: 'Final', word: 'خُبْز', translit: 'Khubz', meaning: 'Bread' }
         ]
     },
     {
@@ -132,9 +143,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "s" sound like in "sun".',
         forms: { isolated: 'س', initial: 'سـ', medial: 'ـسـ', final: 'ـس' },
         examples: [
-            { word: 'سَلَام', translit: 'Salaam', meaning: 'Peace' },
-            { word: 'سَمَاء', translit: 'Samaa', meaning: 'Sky / Heaven' },
-            { word: 'سُورَة', translit: 'Surah', meaning: 'Chapter (of Quran)' }
+            { form: 'Isolated', word: 'س', translit: 'Seen', meaning: 'Letter' },
+            { form: 'Initial', word: 'سَمَكَة', translit: 'Samaka', meaning: 'Fish' },
+            { form: 'Medial', word: 'تِمْسَاح', translit: 'Timsaah', meaning: 'Crocodile' },
+            { form: 'Final', word: 'شَمْس', translit: 'Shams', meaning: 'Sun' }
         ]
     },
     {
@@ -143,9 +155,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "sh" sound like in "shine".',
         forms: { isolated: 'ش', initial: 'شـ', medial: 'ـشـ', final: 'ـش' },
         examples: [
-            { word: 'شَمْس', translit: 'Shams', meaning: 'Sun (Surah)' },
-            { word: 'شُكْر', translit: 'Shukr', meaning: 'Gratitude' },
-            { word: 'شَهْر', translit: 'Shahr', meaning: 'Month' }
+            { form: 'Isolated', word: 'ش', translit: 'Sheen', meaning: 'Letter' },
+            { form: 'Initial', word: 'شَمْس', translit: 'Shams', meaning: 'Sun' },
+            { form: 'Medial', word: 'مُشْط', translit: 'Musht', meaning: 'Comb' },
+            { form: 'Final', word: 'رِيش', translit: 'Reesh', meaning: 'Feather' }
         ]
     },
     {
@@ -154,9 +167,10 @@ const ARABIC_LETTERS = [
         description: 'A heavy "s" sound.',
         forms: { isolated: 'ص', initial: 'صـ', medial: 'ـصـ', final: 'ـص' },
         examples: [
-            { word: 'صَلَاة', translit: 'Salah', meaning: 'Prayer' },
-            { word: 'صَبْر', translit: 'Sabr', meaning: 'Patience' },
-            { word: 'صِرَاط', translit: 'Sirat', meaning: 'Path' }
+            { form: 'Isolated', word: 'ص', translit: 'Saad', meaning: 'Letter' },
+            { form: 'Initial', word: 'صَقْر', translit: 'Saqr', meaning: 'Falcon' },
+            { form: 'Medial', word: 'بَصَل', translit: 'Basal', meaning: 'Onion' },
+            { form: 'Final', word: 'مِقَص', translit: 'Miqass', meaning: 'Scissors' }
         ]
     },
     {
@@ -165,9 +179,10 @@ const ARABIC_LETTERS = [
         description: 'A heavy "d" — unique to Arabic!',
         forms: { isolated: 'ض', initial: 'ضـ', medial: 'ـضـ', final: 'ـض' },
         examples: [
-            { word: 'ضِيَاء', translit: 'Diyaa', meaning: 'Light / Brightness' },
-            { word: 'ضَلَال', translit: 'Dalal', meaning: 'Astray' },
-            { word: 'أَرْض', translit: 'Ard', meaning: 'Earth' }
+            { form: 'Isolated', word: 'ض', translit: 'Daad', meaning: 'Letter' },
+            { form: 'Initial', word: 'ضِفْدَع', translit: 'Difda\'', meaning: 'Frog' },
+            { form: 'Medial', word: 'مِضْرَب', translit: 'Midrab', meaning: 'Racket' },
+            { form: 'Final', word: 'بَيْض', translit: 'Baydh', meaning: 'Egg' }
         ]
     },
     {
@@ -176,9 +191,10 @@ const ARABIC_LETTERS = [
         description: 'A heavy "t" sound.',
         forms: { isolated: 'ط', initial: 'طـ', medial: 'ـطـ', final: 'ـط' },
         examples: [
-            { word: 'طَيِّب', translit: 'Tayyib', meaning: 'Pure / Good' },
-            { word: 'طُور', translit: 'Toor', meaning: 'Mount (Surah)' },
-            { word: 'طَهَارَة', translit: 'Tahara', meaning: 'Purity' }
+            { form: 'Isolated', word: 'ط', translit: 'Taa', meaning: 'Letter' },
+            { form: 'Initial', word: 'طَائِرَة', translit: 'Taa\'ira', meaning: 'Airplane' },
+            { form: 'Medial', word: 'مَطَر', translit: 'Matar', meaning: 'Rain' },
+            { form: 'Final', word: 'قِط', translit: 'Qitt', meaning: 'Cat' }
         ]
     },
     {
@@ -187,9 +203,10 @@ const ARABIC_LETTERS = [
         description: 'A heavy "dh" sound.',
         forms: { isolated: 'ظ', initial: 'ظـ', medial: 'ـظـ', final: 'ـظ' },
         examples: [
-            { word: 'ظُلْم', translit: 'Dhulm', meaning: 'Injustice' },
-            { word: 'ظِلّ', translit: 'Dhill', meaning: 'Shade / Shadow' },
-            { word: 'عَظِيم', translit: 'Adheem', meaning: 'Great / Mighty' }
+            { form: 'Isolated', word: 'ظ', translit: 'Dhaa', meaning: 'Letter' },
+            { form: 'Initial', word: 'ظَرْف', translit: 'Zarf', meaning: 'Envelope' },
+            { form: 'Medial', word: 'مِظَلَّة', translit: 'Mizalla', meaning: 'Umbrella' },
+            { form: 'Final', word: 'حَافِظ', translit: 'Haafiz', meaning: 'Guardian' }
         ]
     },
     {
@@ -198,9 +215,10 @@ const ARABIC_LETTERS = [
         description: 'A unique guttural sound from deep in the throat.',
         forms: { isolated: 'ع', initial: 'عـ', medial: 'ـعـ', final: 'ـع' },
         examples: [
-            { word: 'عِلْم', translit: 'Ilm', meaning: 'Knowledge' },
-            { word: 'عَرْش', translit: 'Arsh', meaning: 'Throne (of God)' },
-            { word: 'عِبَادَة', translit: 'Ibada', meaning: 'Worship' }
+            { form: 'Isolated', word: 'ع', translit: 'Ain', meaning: 'Letter' },
+            { form: 'Initial', word: 'عَيْن', translit: 'Ayn', meaning: 'Eye' },
+            { form: 'Medial', word: 'ثَعْلَب', translit: 'Tha\'lab', meaning: 'Fox' },
+            { form: 'Final', word: 'إِصْبَع', translit: 'Isba\'', meaning: 'Finger' }
         ]
     },
     {
@@ -209,9 +227,10 @@ const ARABIC_LETTERS = [
         description: 'A gargling "gh" sound.',
         forms: { isolated: 'غ', initial: 'غـ', medial: 'ـغـ', final: 'ـغ' },
         examples: [
-            { word: 'غَفُور', translit: 'Ghafoor', meaning: 'Most Forgiving' },
-            { word: 'غَيْب', translit: 'Ghayb', meaning: 'Unseen' },
-            { word: 'مَغْفِرَة', translit: 'Maghfira', meaning: 'Forgiveness' }
+            { form: 'Isolated', word: 'غ', translit: 'Ghain', meaning: 'Letter' },
+            { form: 'Initial', word: 'غُرَاب', translit: 'Ghuraab', meaning: 'Crow' },
+            { form: 'Medial', word: 'بَبْغَاء', translit: 'Babghaa\'', meaning: 'Parrot' },
+            { form: 'Final', word: 'صَمْغ', translit: 'Samgh', meaning: 'Glue' }
         ]
     },
     {
@@ -220,9 +239,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "f" sound like in "fan".',
         forms: { isolated: 'ف', initial: 'فـ', medial: 'ـفـ', final: 'ـف' },
         examples: [
-            { word: 'فَجْر', translit: 'Fajr', meaning: 'Dawn (Surah)' },
-            { word: 'فَلَاح', translit: 'Falah', meaning: 'Success' },
-            { word: 'فُرْقَان', translit: 'Furqan', meaning: 'Criterion (Surah)' }
+            { form: 'Isolated', word: 'ف', translit: 'Fa', meaning: 'Letter' },
+            { form: 'Initial', word: 'فِيل', translit: 'Feel', meaning: 'Elephant' },
+            { form: 'Medial', word: 'تُفَّاح', translit: 'Tuffaah', meaning: 'Apple' },
+            { form: 'Final', word: 'هَاتِف', translit: 'Haatif', meaning: 'Phone' }
         ]
     },
     {
@@ -231,9 +251,10 @@ const ARABIC_LETTERS = [
         description: 'A deep "q" sound from the back of the throat.',
         forms: { isolated: 'ق', initial: 'قـ', medial: 'ـقـ', final: 'ـق' },
         examples: [
-            { word: 'قُرْآن', translit: 'Quran', meaning: 'The Quran' },
-            { word: 'قَلْب', translit: 'Qalb', meaning: 'Heart' },
-            { word: 'قَمَر', translit: 'Qamar', meaning: 'Moon (Surah)' }
+            { form: 'Isolated', word: 'ق', translit: 'Qaf', meaning: 'Letter' },
+            { form: 'Initial', word: 'قَلَم', translit: 'Qalam', meaning: 'Pen' },
+            { form: 'Medial', word: 'صَقْر', translit: 'Saqr', meaning: 'Falcon' },
+            { form: 'Final', word: 'فَرِيق', translit: 'Fareeq', meaning: 'Team' }
         ]
     },
     {
@@ -242,9 +263,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "k" sound like in "kite".',
         forms: { isolated: 'ك', initial: 'كـ', medial: 'ـكـ', final: 'ـك' },
         examples: [
-            { word: 'كِتَاب', translit: 'Kitab', meaning: 'Book' },
-            { word: 'كَرِيم', translit: 'Kareem', meaning: 'Generous / Noble' },
-            { word: 'كَوْثَر', translit: 'Kawthar', meaning: 'Abundance (Surah)' }
+            { form: 'Isolated', word: 'ك', translit: 'Kaf', meaning: 'Letter' },
+            { form: 'Initial', word: 'كَلْب', translit: 'Kalb', meaning: 'Dog' },
+            { form: 'Medial', word: 'سَمَكَة', translit: 'Samaka', meaning: 'Fish' },
+            { form: 'Final', word: 'مَلِك', translit: 'Malik', meaning: 'King' }
         ]
     },
     {
@@ -253,9 +275,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "l" sound like in "love".',
         forms: { isolated: 'ل', initial: 'لـ', medial: 'ـلـ', final: 'ـل' },
         examples: [
-            { word: 'لَيْل', translit: 'Layl', meaning: 'Night (Surah)' },
-            { word: 'لُقْمَان', translit: 'Luqman', meaning: 'Luqman (Surah)' },
-            { word: 'لَوْح', translit: 'Lawh', meaning: 'Tablet' }
+            { form: 'Isolated', word: 'ل', translit: 'Lam', meaning: 'Letter' },
+            { form: 'Initial', word: 'لَيْمُون', translit: 'Laymoon', meaning: 'Lemon' },
+            { form: 'Medial', word: 'قَلَم', translit: 'Qalam', meaning: 'Pen' },
+            { form: 'Final', word: 'جَمَل', translit: 'Jamal', meaning: 'Camel' }
         ]
     },
     {
@@ -264,9 +287,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "m" sound like in "moon".',
         forms: { isolated: 'م', initial: 'مـ', medial: 'ـمـ', final: 'ـم' },
         examples: [
-            { word: 'مُحَمَّد', translit: 'Muhammad', meaning: 'Prophet Muhammad ﷺ' },
-            { word: 'مَسْجِد', translit: 'Masjid', meaning: 'Mosque' },
-            { word: 'مَلَك', translit: 'Malak', meaning: 'Angel' }
+            { form: 'Isolated', word: 'م', translit: 'Meem', meaning: 'Letter' },
+            { form: 'Initial', word: 'مَوْز', translit: 'Mawz', meaning: 'Banana' },
+            { form: 'Medial', word: 'قَمَر', translit: 'Qamar', meaning: 'Moon' },
+            { form: 'Final', word: 'قَلَم', translit: 'Qalam', meaning: 'Pen' }
         ]
     },
     {
@@ -275,9 +299,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "n" sound like in "noon".',
         forms: { isolated: 'ن', initial: 'نـ', medial: 'ـنـ', final: 'ـن' },
         examples: [
-            { word: 'نُور', translit: 'Noor', meaning: 'Light (Surah)' },
-            { word: 'نِعْمَة', translit: "Ni'ma", meaning: 'Blessing' },
-            { word: 'نَبِيّ', translit: 'Nabi', meaning: 'Prophet' }
+            { form: 'Isolated', word: 'ن', translit: 'Noon', meaning: 'Letter' },
+            { form: 'Initial', word: 'نَمْلَة', translit: 'Namla', meaning: 'Ant' },
+            { form: 'Medial', word: 'عِنَب', translit: 'Inab', meaning: 'Grapes' },
+            { form: 'Final', word: 'تِين', translit: 'Teen', meaning: 'Fig' }
         ]
     },
     {
@@ -286,9 +311,10 @@ const ARABIC_LETTERS = [
         description: 'A light "h" sound like in "hello".',
         forms: { isolated: 'ه', initial: 'هـ', medial: 'ـهـ', final: 'ـه' },
         examples: [
-            { word: 'هُدَى', translit: 'Huda', meaning: 'Guidance' },
-            { word: 'هُوَ', translit: 'Huwa', meaning: 'He (Allah)' },
-            { word: 'هِجْرَة', translit: 'Hijra', meaning: 'Migration' }
+            { form: 'Isolated', word: 'ه', translit: 'Ha', meaning: 'Letter' },
+            { form: 'Initial', word: 'هَرَم', translit: 'Haram', meaning: 'Pyramid' },
+            { form: 'Medial', word: 'نَهْر', translit: 'Nahr', meaning: 'River' },
+            { form: 'Final', word: 'مُنَبِّه', translit: 'Munabbih', meaning: 'Alarm clock' }
         ]
     },
     {
@@ -297,9 +323,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "w" sound like in "water".',
         forms: { isolated: 'و', initial: 'و', medial: 'ـو', final: 'ـو' },
         examples: [
-            { word: 'وَحْي', translit: 'Wahy', meaning: 'Revelation' },
-            { word: 'وُضُوء', translit: 'Wudu', meaning: 'Ablution' },
-            { word: 'وَلِيّ', translit: 'Wali', meaning: 'Protector / Friend' }
+            { form: 'Isolated', word: 'و', translit: 'Waw', meaning: 'Letter' },
+            { form: 'Initial', word: 'وَرْدَة', translit: 'Warda', meaning: 'Rose' },
+            { form: 'Medial', word: 'صُورَة', translit: 'Soora', meaning: 'Picture' },
+            { form: 'Final', word: 'دَلْو', translit: 'Dalw', meaning: 'Bucket' }
         ]
     },
     {
@@ -308,9 +335,10 @@ const ARABIC_LETTERS = [
         description: 'Makes a "y" sound like in "yes".',
         forms: { isolated: 'ي', initial: 'يـ', medial: 'ـيـ', final: 'ـي' },
         examples: [
-            { word: 'يَوْم', translit: 'Yawm', meaning: 'Day' },
-            { word: 'يَقِين', translit: 'Yaqeen', meaning: 'Certainty' },
-            { word: 'يَاسِين', translit: 'Yaseen', meaning: 'Yaseen (Surah)' }
+            { form: 'Isolated', word: 'ي', translit: 'Ya', meaning: 'Letter' },
+            { form: 'Initial', word: 'يَد', translit: 'Yad', meaning: 'Hand' },
+            { form: 'Medial', word: 'خِيَار', translit: 'Khiyaar', meaning: 'Cucumber' },
+            { form: 'Final', word: 'كُرْسِي', translit: 'Kursi', meaning: 'Chair' }
         ]
     }
 ];
@@ -456,7 +484,8 @@ function speakLetter(letterData) {
         currentAudio = null;
     }
 
-    const text = encodeURIComponent(letterData.sound);
+    const textToSpeak = letterData.sound + 'ْ';
+    const text = encodeURIComponent(textToSpeak);
     const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=ar&client=tw-ob&q=${text}`;
 
     const audio = new Audio(url);
@@ -467,7 +496,7 @@ function speakLetter(letterData) {
         // Fallback to SpeechSynthesis if Google TTS fails
         if ('speechSynthesis' in window) {
             window.speechSynthesis.cancel();
-            const utterance = new SpeechSynthesisUtterance(letterData.sound);
+            const utterance = new SpeechSynthesisUtterance(textToSpeak);
             utterance.lang = 'ar-SA';
             utterance.rate = 0.7;
             utterance.volume = 1.0;
@@ -487,7 +516,9 @@ function speakWord(word) {
         currentAudio = null;
     }
 
-    const text = encodeURIComponent(word);
+    // Append a sukoon (ْ) to force a pause (Waqf) and prevent Google TTS from adding tanween (un/in/an)
+    const textToSpeak = word + 'ْ';
+    const text = encodeURIComponent(textToSpeak);
     const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=ar&client=tw-ob&q=${text}`;
 
     const audio = new Audio(url);
@@ -497,7 +528,7 @@ function speakWord(word) {
     audio.play().catch(() => {
         if ('speechSynthesis' in window) {
             window.speechSynthesis.cancel();
-            const utterance = new SpeechSynthesisUtterance(word);
+            const utterance = new SpeechSynthesisUtterance(textToSpeak);
             utterance.lang = 'ar-SA';
             utterance.rate = 0.7;
             utterance.volume = 1.0;
@@ -598,7 +629,7 @@ function showLetterPopup(letterData) {
         popupForms.appendChild(badge);
     }
 
-    // Render Quran word examples
+    // Render word examples
     let examplesContainer = document.getElementById('popup-examples');
     if (!examplesContainer) {
         examplesContainer = document.createElement('div');
@@ -606,7 +637,7 @@ function showLetterPopup(letterData) {
         examplesContainer.className = 'examples-section';
         popupForms.parentNode.insertBefore(examplesContainer, document.getElementById('popup-play-btn'));
     }
-    examplesContainer.innerHTML = '<h3 class="examples-title">📖 Quran Words</h3>';
+    examplesContainer.innerHTML = '<h3 class="examples-title">📖 Word Examples</h3>';
     if (letterData.examples) {
         const list = document.createElement('div');
         list.className = 'examples-list';
@@ -616,7 +647,7 @@ function showLetterPopup(letterData) {
             item.innerHTML = `
                 <span class="example-word" dir="rtl">${ex.word}</span>
                 <span class="example-details">
-                    <span class="example-translit">${ex.translit}</span>
+                    <span class="example-translit">${ex.form}: ${ex.translit}</span>
                     <span class="example-meaning">${ex.meaning}</span>
                 </span>
             `;
@@ -709,7 +740,7 @@ function updatePractice() {
         practiceForms.appendChild(badge);
     }
 
-    // Quran word examples
+    // Word examples
     let practiceExamples = document.getElementById('practice-examples');
     if (!practiceExamples) {
         practiceExamples = document.createElement('div');
@@ -717,7 +748,7 @@ function updatePractice() {
         practiceExamples.className = 'examples-section';
         practiceForms.parentNode.insertBefore(practiceExamples, document.querySelector('.practice-controls'));
     }
-    practiceExamples.innerHTML = '<h3 class="examples-title">📖 Quran Words</h3>';
+    practiceExamples.innerHTML = '<h3 class="examples-title">📖 Word Examples</h3>';
     if (item.examples) {
         const list = document.createElement('div');
         list.className = 'examples-list';
@@ -727,7 +758,7 @@ function updatePractice() {
             exItem.innerHTML = `
                 <span class="example-word" dir="rtl">${ex.word}</span>
                 <span class="example-details">
-                    <span class="example-translit">${ex.translit}</span>
+                    <span class="example-translit">${ex.form}: ${ex.translit}</span>
                     <span class="example-meaning">${ex.meaning}</span>
                 </span>
             `;
