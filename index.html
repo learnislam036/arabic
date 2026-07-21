@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Arabic Alphabet lesson for kids - Learn Quran reading with fun sounds and animations">
+    <title>تعلم الحروف العربية - Learn Arabic Alphabets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Baloo+Bhaijaan+2:wght@400;600;800&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating decorations -->
+    <div class="floating-decor">
+        <span class="star" style="top:5%;left:8%;animation-delay:0s;">⭐</span>
+        <span class="star" style="top:12%;left:85%;animation-delay:1.2s;">🌟</span>
+        <span class="star" style="top:30%;left:3%;animation-delay:0.5s;">✨</span>
+        <span class="star" style="top:55%;left:92%;animation-delay:2s;">⭐</span>
+        <span class="star" style="top:75%;left:6%;animation-delay:1.8s;">🌙</span>
+        <span class="star" style="top:85%;left:90%;animation-delay:0.8s;">🌟</span>
+        <span class="star" style="top:40%;left:95%;animation-delay:1.5s;">✨</span>
+        <span class="star" style="top:65%;left:2%;animation-delay:2.5s;">🌙</span>
+        <span class="flower" style="top:8%;left:50%;animation-delay:0.3s;">🌸</span>
+        <span class="flower" style="top:90%;left:45%;animation-delay:1.7s;">🦋</span>
+        <span class="flower" style="top:20%;left:15%;animation-delay:2.2s;">🌺</span>
+        <span class="flower" style="top:70%;left:80%;animation-delay:0.9s;">🌸</span>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-content">
+            <div class="header-icon">📖</div>
+            <h1 id="page-title">تعلم الحروف العربية</h1>
+            <p class="subtitle">Learn Arabic Alphabets for Quran Reading 🌟</p>
+        </div>
+        <nav class="mode-switcher" id="mode-nav">
+            <button class="mode-btn active" data-mode="all" id="btn-all-letters">
+                <span class="mode-icon">🔤</span>
+                <span>All Letters</span>
+            </button>
+            <button class="mode-btn" data-mode="practice" id="btn-practice">
+                <span class="mode-icon">🎯</span>
+                <span>Practice</span>
+            </button>
+            <button class="mode-btn" data-mode="quiz" id="btn-quiz">
+                <span class="mode-icon">⭐</span>
+                <span>Quiz</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- All Letters Grid -->
+        <section id="all-letters-section" class="section active">
+            <div class="section-header">
+                <h2>Tap a letter to hear its sound! 🔊</h2>
+                <div class="form-select-wrapper">
+                    <label for="form-filter">Letter Form:</label>
+                    <select id="form-filter">
+                        <option value="isolated">Isolated</option>
+                        <option value="initial">Initial (beginning)</option>
+                        <option value="medial">Medial (middle)</option>
+                        <option value="final">Final (end)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="letters-grid" id="letters-grid">
+                <!-- Letters will be injected by JS -->
+            </div>
+        </section>
+
+        <!-- Practice Section -->
+        <section id="practice-section" class="section">
+            <div class="practice-container">
+                <div class="practice-card" id="practice-card">
+                    <div class="practice-letter-display">
+                        <span class="practice-letter" id="practice-letter">ا</span>
+                    </div>
+                    <div class="practice-info">
+                        <p class="practice-name" id="practice-name">Alif</p>
+                        <p class="practice-transliteration" id="practice-translit">a</p>
+                        <p class="practice-description" id="practice-desc">The first letter of the Arabic alphabet</p>
+                    </div>
+                    <div class="practice-forms" id="practice-forms">
+                        <!-- Forms will be injected -->
+                    </div>
+                    <div class="practice-controls">
+                        <button class="control-btn" id="btn-prev" aria-label="Previous letter">
+                            <span>◀</span>
+                        </button>
+                        <button class="control-btn play-btn" id="btn-play-practice" aria-label="Play sound">
+                            <span>🔊</span>
+                            <span>Listen</span>
+                        </button>
+                        <button class="control-btn" id="btn-next" aria-label="Next letter">
+                            <span>▶</span>
+                        </button>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="practice-progress"></div>
+                        <span class="progress-text" id="progress-text">1 / 28</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="section">
+            <div class="quiz-container" id="quiz-container">
+                <div class="quiz-header">
+                    <div class="quiz-score" id="quiz-score">
+                        <span class="score-stars" id="score-stars">⭐ 0</span>
+                        <span class="score-total" id="score-total">/ 0</span>
+                    </div>
+                </div>
+                <div class="quiz-question" id="quiz-question">
+                    <p class="quiz-prompt">Which letter makes this sound?</p>
+                    <button class="quiz-play-btn" id="quiz-play-btn" aria-label="Play quiz sound">
+                        🔊 Play Sound
+                    </button>
+                </div>
+                <div class="quiz-options" id="quiz-options">
+                    <!-- Options injected by JS -->
+                </div>
+                <div class="quiz-feedback" id="quiz-feedback"></div>
+                <button class="quiz-next-btn hidden" id="quiz-next-btn">Next Question ▶</button>
+            </div>
+            <!-- Quiz Complete -->
+            <div class="quiz-complete hidden" id="quiz-complete">
+                <div class="celebration">🎉</div>
+                <h2>Mashallah! Great Job!</h2>
+                <p class="final-score" id="final-score"></p>
+                <div class="trophy-display" id="trophy-display"></div>
+                <button class="restart-btn" id="quiz-restart-btn">Play Again 🔄</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sound popup overlay -->
+    <div class="letter-popup hidden" id="letter-popup">
+        <div class="popup-content">
+            <button class="popup-close" id="popup-close" aria-label="Close">✕</button>
+            <div class="popup-letter" id="popup-letter"></div>
+            <div class="popup-name" id="popup-name"></div>
+            <div class="popup-translit" id="popup-translit"></div>
+            <div class="popup-forms" id="popup-forms"></div>
+            <button class="popup-play-btn" id="popup-play-btn">🔊 Listen Again</button>
+        </div>
+    </div>
+
+    <!-- Confetti canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
